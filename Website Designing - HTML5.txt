@@ -55,18 +55,20 @@ An ID attribute must only be used by one HTML element within the page.
 Que 8 : What are the various formatting tags in HTML? 
 Ans 8 :
 
-HTML Formatting Elements,
-
-<b> - Bold text
-<strong> - Important text
-<i> - Italic text
-<em> - Emphasized text
-<mark> - Marked text
-<small> - Smaller text
-<del> - Deleted text
-<ins> - Inserted text
-<sub> - Subscript text
-<sup> - Superscript text
+<b>		This tag is used to bold the text written between it.
+<strong>	This tag is tells the browser that the text is important.
+<i>		This tag is used to make text italic.
+<em>		This tag is used to display content in italic.
+<mark>	This tag is used to highlight text.
+<u>		This tag is used to underline text written between it.
+<tt>		This tag is used to appear a text in teletype. (not supported in HTML5)
+<strike>	This tag is used to draw a strikethrough on a section of text. (Not supported in HTML5)
+<sup>		It displays the content slightly above the normal line.
+<sub>		It displays the content slightly below the normal line.
+<del>		This tag is used to display the deleted content.
+<ins>		This tag displays the content which is added
+<big>		This tag is used to increase the font size by one conventional unit.
+<small>	This tag is used to decrease the font size by one unit from base font size.
 
 
 Que 9 : How is Cell Padding different from Cell Spacing?
@@ -166,4 +168,4 @@ Ans 20 :
 Logical and Physical tags are used in HTML for better visibility and understanding of the text by the user on the web page. 
 However, both tags differ from each other as suggested by their names. 
 Logical Tags are used in HTML to display the text according to the logical styles.
-Physical Tags are used in HTML to provide actual physical formatting to the text.
+Physical Tags are used in HTML to provide actual physical formatting to the text. Following are the Physical tags commonly used in HTML.
