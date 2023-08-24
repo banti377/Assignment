@@ -1,0 +1,32 @@
+Que 1 : Create a program to hide/show the password
+Ans 1 :
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function hide_show() {
+        let pass = document.getElementById("pass")
+        if (pass.type == "password") {
+            pass.type = "text"
+        } else {
+            pass.type = "password"
+        }
+    }
+</script>
+
+<body>
+    <form action="">
+        Enter Password : <input type="password" name="" id="pass">
+        <br><br>
+        <input type="checkbox" onclick="return hide_show()"> Show Password
+    </form>
+</body>
+
+</html>

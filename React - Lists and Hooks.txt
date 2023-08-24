@@ -1,0 +1,37 @@
+1. Class Component Lifecycle:
+
+The lifecycle of a class component can be divided into three main phases:
+
+
+1) Mounting: This phase occurs when the component is being created and inserted into the DOM.
+
+=> constructor(): This is the first method called when the component is initialized. It is used for setting up the initial state and binding event handlers.
+
+=> render(): This method returns the JSX that represents the component's UI. It is a mandatory method and must be implemented in every class component.
+
+=>componentDidMount(): This method is called immediately after the component is inserted into the DOM. It is used for side effects like making AJAX requests, adding event listeners, etc.
+
+
+2) Updating: This phase occurs when the component's state or props change.
+
+=> render(): Re-rendering of the component is triggered when there are changes in state or props.
+
+=> componentDidUpdate(): This method is called after the component re-renders due to changes in state or props. It is useful for performing side effects after an update.\
+
+
+3) Unmounting: This phase occurs when the component is being removed from the DOM.
+
+=> componentWillUnmount(): This method is called just before the component is removed from the DOM. It is used for cleanup, such as removing event listeners or canceling network requests.
+
+
+
+2. Functional Component with Hooks:
+
+Functional components were introduced to React as a simpler and more concise way to create components. To add lifecycle functionality to functional components, React introduced Hooks, which are functions that allow you to use state and lifecycle features in functional components.
+
+With Hooks, the lifecycle events are managed by using specific hooks, such as useState, useEffect, etc.
+
+useState: This hook allows functional components to have their own local state, similar to the state in class components.
+
+useEffect: This hook combines the functionalities of componentDidMount, componentDidUpdate, and componentWillUnmount into a single hook. It is used for handling side effects in functional components, such as AJAX requests or subscriptions.
+

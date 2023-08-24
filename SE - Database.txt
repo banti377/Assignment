@@ -1,0 +1,44 @@
+1 Database:
+A database is a structured collection of data that is organized and stored in a way that allows for efficient retrieval, management, and manipulation of that data. It can be thought of as an electronic filing system that stores and manages information.
+
+
+2 Normalization:
+Normalization is the process of organizing data in a database to minimize data redundancy and dependency. It involves breaking down a database into smaller, related tables and defining relationships between those tables. The goal of normalization is to reduce data anomalies and improve data integrity.
+
+
+3 Difference between DBMS and RDBMS:
+DBMS stands for Database Management System, while RDBMS stands for Relational Database Management System. The key difference is that an RDBMS stores data in a structured manner using tables with rows and columns, and enforces relationships between tables using keys and constraints, while a DBMS could encompass various data storage methods, not necessarily following the relational model.
+
+
+4 MF Cod Rule of RDBMS Systems:
+It seems there might be a typo or misunderstanding here. The term "MF Cod Rule" doesn't correspond to a recognized concept in RDBMS. Could you please provide more context or clarify this term?
+
+
+5 Data Redundancy:
+Data redundancy refers to the duplication of data in a database. When the same data is stored multiple times in different parts of a database, it can lead to inconsistencies, waste of storage space, and difficulties in maintaining data integrity.
+
+
+6 DDL Interpreter:
+DDL stands for Data Definition Language. A DDL interpreter is part of a DBMS or RDBMS that processes DDL statements. DDL statements are used to define the structure of the database, including creating tables, defining constraints, and altering the schema.
+
+
+7 DML Compiler in SQL:
+DML stands for Data Manipulation Language. A DML compiler is a component of a DBMS that processes DML statements, which are used to manipulate data stored in the database. DML statements include commands like SELECT, INSERT, UPDATE, and DELETE.
+
+
+8 SQL Key Constraints:
+SQL key constraints ensure the uniqueness and integrity of data in a table. There are several types of key constraints:
+
+
+Primary Key: Ensures each row has a unique identifier. Example: CREATE TABLE Students (ID INT PRIMARY KEY, Name VARCHAR(50));
+
+Unique Key: Ensures uniqueness but allows NULL values. Example: CREATE TABLE Employees (EmployeeID INT UNIQUE, Name VARCHAR(50));
+
+Foreign Key: Establishes a relationship between tables. Example: CREATE TABLE Orders (OrderID INT, CustomerID INT, FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID));
+
+9 Savepoint:
+A savepoint in a database is a point within a transaction to which you can later roll back. It allows you to set a marker in your transaction and later revert back to that point if needed. In SQL, you can create a savepoint using the SAVEPOINT statement, like: SAVEPOINT my_savepoint;
+
+
+10 Trigger:
+A trigger in a database is a set of actions that are automatically performed when a certain event occurs. These events can include INSERT, UPDATE, or DELETE operations on a table. Triggers are used to enforce business rules, maintain data integrity, and automate certain actions
