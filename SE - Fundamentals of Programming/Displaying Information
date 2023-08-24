@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    printf("1. Your Name\n");
+    printf("2. Your Birth date\n");
+    printf("3. Your Age\n");
+    printf("4. Your Address\n");
+    return 0;
+}
