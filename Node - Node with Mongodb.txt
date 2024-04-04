@@ -1,0 +1,61 @@
+Q1. What is MongoDB?
+
+A1. MongoDB is a popular open-source, NoSQL, document-oriented database. It uses a flexible schema to store data in JSON-like documents, which makes it easy to store and retrieve complex data structures. MongoDB is known for its scalability, high performance, and ease of use, making it a preferred choice for many modern web applications and enterprise solutions.
+
+
+Q2. What is the difference between MongoDB and SQL?
+
+A2. Data Model: MongoDB uses a flexible document-based data model, while SQL databases use a rigid, table-based structure.
+Schema: MongoDB has a dynamic schema, allowing for easy modification of data structure without downtime. SQL databases have a predefined schema that needs to be defined before data insertion.
+Query Language: MongoDB uses a query language similar to JSON, while SQL databases use Structured Query Language (SQL).
+Scalability: MongoDB is highly scalable and can handle large amounts of data across distributed servers easily. SQL databases may face scalability challenges with large datasets.
+Transactions: MongoDB supports multi-document transactions in recent versions, whereas traditional SQL databases have long supported transactions.
+Community and Ecosystem: MongoDB has a large and active community with extensive documentation and support. SQL databases also have a strong community but may vary depending on the specific database.
+
+
+Q3. Create a database for an online shopping app.
+
+A3. use onlineShoppingApp;
+
+
+Q4. Create Required collections for the online shopping app and documents:
+
+A4.
+
+i. User Collection:
+db.createCollection("users");
+
+ii. Product Category Collection:
+db.createCollection("productCategories");
+
+iii. Product Collection:
+db.createCollection("products");
+
+iv. Order Collection:
+db.createCollection("orders");
+
+v. Review Collection:
+db.createCollection("reviews");
+
+
+Q5. Write a command to show all data from the product collection and sort in ascending order.
+A5.
+db.products.find().sort({ _id: 1 });
+
+
+Q6. Update the product price for a particular product.
+A6.
+db.products.updateOne(
+   { _id: ObjectId("product_id_here") },
+   { $set: { price: new_price_here } }
+);
+
+Q7. Write a command to delete a particular document and collection.
+A7.
+To delete a document:
+db.collection_name.deleteOne({ _id: ObjectId("document_id_here") });
+
+To delete a collection:
+db.collection_name.drop();
+
+Replace "product_id_here", "new_price_here", "collection_name", and "document_id_here" with the actual values according to your data.
