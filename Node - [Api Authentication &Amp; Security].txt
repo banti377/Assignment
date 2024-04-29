@@ -1,0 +1,38 @@
+
+Q1. Middleware in Express.js:
+A1. Middleware in Express.js are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. Middleware functions can perform tasks such as modifying request and response objects, terminating the request-response cycle, calling the next middleware function in the stack, etc. Middleware can be used for tasks like logging, authentication, parsing request bodies, handling errors, etc.
+
+Q2. JSON Web Tokens (JWT):
+A2. JSON Web Tokens (JWT) are a compact, URL-safe means of representing claims between two parties. JWTs are commonly used for authentication and authorization purposes in web applications. They consist of three parts: a header, a payload, and a signature. The header typically specifies the type of token and the hashing algorithm used, while the payload contains the claims. JWTs are digitally signed to ensure that the claims have not been tampered with.
+
+Q3. Difference between encryption and hashing:
+A3. Encryption and hashing are both cryptographic techniques but serve different purposes:
+
+Encryption is a reversible process where data is transformed using an algorithm (and usually a key) to make it unreadable to anyone who doesn't have the corresponding decryption key. The intention is to protect the confidentiality of the data.
+Hashing is a one-way process where data is transformed into a fixed-size string of characters, typically using a hash function. Unlike encryption, hashing is not reversible. Its primary use case is to verify data integrity and securely store passwords. Even if two different inputs produce the same hash value (a collision), it's computationally infeasible to reverse the process to obtain the original input.
+
+Q4. CRUD Application with session management, JWT, and logout functionality:
+A4. Here's a high-level overview of how you could implement the CRUD application with the specified features:
+
+i. Session Management (Login & Logout):
+
+Use session middleware in Express.js to manage user sessions.
+Implement login functionality where user credentials are authenticated, and a session is created.
+Implement logout functionality to destroy the session.
+
+ii. Generate Token While Registration and Login:
+
+Use JWT to generate tokens upon successful registration and login.
+Include user information in the JWT payload.
+Send the generated token to the client for subsequent requests.
+
+iii. Logout from One Device:
+
+Maintain a list of active tokens (JWTs) associated with each user in the database.
+When a user logs out from one device, remove the corresponding token from the list of active tokens.
+
+iv. Logout from All Devices:
+
+Introduce a mechanism to invalidate all tokens associated with a user.
+When a user initiates a logout from all devices, invalidate all tokens associated with that user.
+For detailed implementation, you would need to handle routes for registration, login, logout, CRUD operations, middleware for authentication and authorization, token generation and verification, session management, etc.
